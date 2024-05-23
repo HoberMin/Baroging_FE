@@ -5,5 +5,6 @@ COPY ./ ./
 RUN npm ci
 RUN npm run build
 RUN npm install -g serve
-EXPOSE 5173
-CMD ["serve","-s", "build"]
+EXPOSE 3000
+CMD ["npm", "run", "prod"]
+
