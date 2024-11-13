@@ -60,7 +60,7 @@ const SignInPage = () => {
                 placeholder='키'
                 type='text'
               />
-              <span className='absolute right-[100px]'>
+              <span className='absolute right-[80px]'>
                 {height ? 'cm' : ''}
               </span>
             </div>
@@ -72,7 +72,7 @@ const SignInPage = () => {
                 placeholder='체중'
                 type='text'
               />
-              <span className='absolute right-[100px]'>
+              <span className='absolute right-[80px]'>
                 {weight ? 'kg' : ''}
               </span>
             </div>

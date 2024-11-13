@@ -4,7 +4,9 @@ export type DataType = {
     timer: string;
     distance: string;
     kcal: number;
-    locationList: { lat: number; long: number; }[]
+    locationList: { lat: number; long: number; }[];
+    trashList: { lat: number; long: number; }[]
+
 }
 
 
@@ -13,7 +15,8 @@ export function useDone() {
         timer: "{string}",
         distance: "{string}",
         kcal: 0,
-        locationList: [{ lat: 0, long: 0 }]
+        locationList: [{ lat: 0, long: 0 }],
+        trashList: [{ lat: 0, long: 0 }],
     })
 
     const done = (inputdata: DataType) => {
@@ -21,7 +24,9 @@ export function useDone() {
             timer: inputdata.timer,
             distance: inputdata.distance,
             kcal: inputdata.kcal,
-            locationList: inputdata.locationList
+            locationList: inputdata.locationList,
+            trashList: inputdata.trashList
+
         })
 
         localStorage.setItem("done", JSON.stringify(inputdata));
@@ -37,7 +42,8 @@ export function useDone() {
                 timer: "{string}",
                 distance: "{string}",
                 kcal: 0,
-                locationList: [{ lat: 0, long: 0 }]
+                locationList: [{ lat: 0, long: 0 }],
+                trashList: [{ lat: 0, long: 0 }]
             }
 
         }

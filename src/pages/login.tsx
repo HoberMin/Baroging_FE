@@ -10,12 +10,11 @@ const LoginButton = () => {
   const userINFO = localStorage.getItem('userInfo');
 
   useEffect(() => {
-    if (userID && userINFO) {
-      navigate('/');
-    }
-
     if (userID && !userINFO) {
       navigate('/signIn');
+    }
+    if (userID && userINFO) {
+      navigate('/');
     }
   }, []);
 
@@ -25,10 +24,8 @@ const LoginButton = () => {
   };
 
   return (
-    <div className='z-10 w-full'>
-      <PrimaryButton onClick={handleClickButton}>
-        산책정보 입력하기
-      </PrimaryButton>
+    <div className='z-10 w-full p-4'>
+      <PrimaryButton onClick={handleClickButton}>시작하기</PrimaryButton>
     </div>
   );
 };
@@ -36,10 +33,10 @@ const LoginButton = () => {
 const LoginPage = () => (
   <div className='relative flex h-full flex-col'>
     <div className='grow'>
-      <div className='absolute left-[32px] top-[84px] z-20 flex flex-col'>
+      <div className='absolute left-[32px] top-[120px] z-20 flex flex-col'>
         <span className='text-[24px]'>바로깅과</span>
         <span className='text-[24px]'>바다로 플로깅 가자</span>
-        <div className='z-10 mt-4'>
+        <div className='z-10 mt-3'>
           <svg
             width='192'
             height='63'

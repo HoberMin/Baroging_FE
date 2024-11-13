@@ -19,7 +19,7 @@ export function PrimaryButton({
     <button
       type={type}
       onClick={onClick}
-      className='w-full rounded-md bg-gray-400 p-3 text-gray-50'
+      className='mb-4 w-full rounded-md bg-gray-400 p-3 text-white'
       style={{ backgroundColor: '#7FD6E1' }}
       {...props}
     >

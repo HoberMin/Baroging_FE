@@ -12,7 +12,7 @@ const RootLayout = ({ children }: PropsWithChildren) => (
   <div
     id={'layoutRoot'}
     className={clsx(
-      'relative flex h-screen max-h-[896px] min-h-[667px] w-screen min-w-[375px] max-w-[414px] shrink-0 flex-col shadow-xl',
+      'relative flex h-screen max-h-[950px] min-h-[600px] w-screen min-w-[350px] max-w-[450px] shrink-0 flex-col shadow-xl',
     )}
   >
     {children}
